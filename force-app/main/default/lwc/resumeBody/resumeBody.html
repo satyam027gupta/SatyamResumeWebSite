@@ -1,0 +1,42 @@
+<template>
+    <div>This is Body cmp</div>
+    <lightning-button variant="brand" label="Click Me" onclick={handleApi}></lightning-button>
+    <lightning-card title='Profile Summary'>
+        <lightning-accordion active-section-name="A">
+            <lightning-accordion-section name='A' label="Salesforce Developer">
+               
+                    <ul style="padding-left: 20px;">
+                        <li>
+                            • Building Lightning Web Component for new User Stories.
+                        </li>
+                        <li>
+                            • Writing Triggers, Apex Classes, Test Classes and VF pages.
+                        </li>
+                        <li>
+                            • Integrating the application with third party data provider.
+                        </li>
+                        <li>
+                            • Refactoring the existing Apex classes and Aura components.
+                        </li>
+                        <li>
+                            • Debugging the existing code and providing production support if needed.
+                            • Configuring Workflows and Approvals, Security model and other Force.com related
+                            configurations
+                        </li>
+
+                    </ul>
+                    
+               
+            </lightning-accordion-section>
+            <lightning-accordion-section name="B" label="JAVA Developer">
+                <p style="padding-left: 20px;">
+                    • Worked on development of Automated software testing tool.<br/>
+                    • Worked as a Java developer and also have some experience of working on selenium.<br/>
+                    • Excellent time management skills with ability to perform under pressure & meet
+                    deadlines.
+                </p>   
+            </lightning-accordion-section>
+        </lightning-accordion>
+        
+    </lightning-card>
+</template>

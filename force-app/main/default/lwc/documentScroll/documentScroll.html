@@ -1,0 +1,77 @@
+<template>
+    <lightning-button onclick={openModal} label="Open Modal">
+
+    </lightning-button>
+    <!-- <template if:true={openM}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container" style="max-width: 80rem !important;
+            width: 80% !important;" >
+            
+                <div class="slds-modal__content slds-p-around_medium"
+                    data-id="modal-content-id-2" onscroll={handlesc}>
+                    <iframe
+                    
+                        src="https://www.questtrustcompany.com/documents/5305-hsa.pdf#zoom=100&toolbar=0&navpanes=0&scrollbar=0"
+                        frameborder="1" width="100%" height="19275px"
+                        
+                        data-id="frame">
+                    </iframe>
+                </div>
+            <lightning-button label="Click" onclick={handlesc}>
+    
+            </lightning-button>
+    
+            </div>
+        </section>
+    </template> -->
+    <template if:true={openM}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01"
+            aria-modal="true" aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container"  style="max-width: 80rem !important;width: 80% !important;">
+                <!-- modal header start -->
+                <header class="slds-modal__header">
+                    <button
+                        class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={hideModalBox}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close" variant="inverse" size="small">
+                        </lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01"
+                        class="slds-text-heading_medium slds-hyphenate">Custodial
+                        Agreement</h2>
+                </header>
+
+                <!-- modal body start -->
+                <div class="slds-modal__content slds-p-around_medium"
+                data-id="modal-content-id-1"  onscroll={handlesc}>
+                    <!-- <iframe
+                        src={iframePdfLink}
+                        frameborder="1" width="100%" height="19275px"
+                        scrolling="auto"></iframe> -->
+                        <iframe
+                        src={iframePdfLink}
+                        frameborder="1" width="100%" height="19275px"
+                        data-id="frame" scrolling="auto">
+                    </iframe>
+                </div>
+
+                <!-- modal footer start-->
+                <footer
+                    class="slds-modal__footer slds-grid slds-wrap slds-grid_vertical-align-center slds-grid_align-end">
+                    <lightning-input
+                        class="slds-p-left_xx-large checked custom-checkbox-label"
+                        type="checkbox" label="I have read and agree to" required>
+                    </lightning-input>
+                    <button class="slds-button slds-button_neutral"
+                        onclick={hideModalBox}>Continue</button>
+                </footer>
+
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+</template>

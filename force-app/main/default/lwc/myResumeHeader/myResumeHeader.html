@@ -1,0 +1,54 @@
+<template>
+    <div class="slds-wrap slds-grid">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+            <img src={photo} style="width: 100px; border-radius: 50px;"></br>
+           
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+            <div class="textStyle">
+                {name}
+            </div>
+            <div  class="textStyle">
+                {resumeData.role}
+            </div>
+            <ul>
+                <li>
+                    <a href={maillink} class="link">
+                        <lightning-icon icon-name="utility:email" alternative-text="email!" size="x-small"
+                                title="email" class="slds-var-m-right_small"></lightning-icon>
+                        {resumeData.email}
+                    </a>
+                </li>
+                <li>
+                    <a href={phonelink} class="" style="text-decoration: none;" >
+                        <lightning-icon icon-name="utility:dialing" alternative-text="phone!" size="x-small"
+                                title="phone" class="slds-var-m-right_small  "></lightning-icon>
+                                {resumeData.contact_No}
+                    </a>
+                </li>
+            </ul>
+
+            
+           
+           
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+            <div >
+                <template for:each={socialData} for:item="item">
+                    <div key={item.type} >
+                        <a class={link} href={item.link} target="_blank">
+                            {item.label}
+                        </a>
+                    </div>
+
+                </template>
+                <img  src={badgePic} style="width: 100px; border-radius: 50px;">
+                <!-- <lightning-icon src={linkedIcon}>
+                    
+                </lightning-icon> -->
+            </div>
+            
+            <!-- <p class="slds-text-align_right">otherdata</p> -->
+        </div>
+    </div>
+</template>

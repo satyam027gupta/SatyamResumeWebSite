@@ -1,0 +1,24 @@
+<template>
+    <!-- <a onclick={handleClick} target="_blank">
+        Click Me
+    </a> -->
+    <div class="wrapper">
+        <div class="slds-var-p-around_medium header_color ">
+            
+            <c-my-resume-header 
+                resume-data={userDetails} 
+                photo={ProfilePHOTO} 
+                social-data={SocialData}
+                badge-pic = {BADGE_PIC}
+            >
+            </c-my-resume-header>
+            
+        </div>
+        <div>
+            <c-my-resume-body></c-my-resume-body>
+        </div>
+        <div>
+            <c-my-resume-footer></c-my-resume-footer>
+        </div>
+    </div>
+</template>

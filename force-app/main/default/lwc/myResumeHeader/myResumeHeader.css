@@ -1,0 +1,10 @@
+.textStyle{
+    font-size: large; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    color: rgb(6, 115, 179);
+}
+.link{
+    text-decoration: none;
+    color: rgb(6, 115, 179);
+}

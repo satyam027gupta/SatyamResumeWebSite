@@ -1,0 +1,69 @@
+<template>
+    
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-5 slds-large-size_4-of-5">
+            <c-my-resume-summary>
+            </c-my-resume-summary>
+            <div>
+                <lightning-card title="Work Experience">
+                    <div class="slds-m-left_medium">
+                        <a href="https://www.algoworks.com/" target="_blank" class="slds-p-left_medium">
+                            <b>Algoworks  </b>
+                        </a>
+                        <b>Noida, India – DECEMBER 2021 Till Date</b><br>
+                        <a href="https://www.persistent.com/" target="_blank" class="slds-p-left_medium">
+                            <b>Persistent Systems  </b>
+                        </a>
+                        <b>Nagpur, India - JULY 2019 to DECEMBER 2021</b>
+                    </div>
+                </lightning-card>
+
+            </div>
+            <div>
+                <lightning-card title="Education">
+                    <div class="slds-m-left_medium">
+                        <ol class="slds-m-left_medium">
+                            <li><b>BE - Computer Science & Engineering 
+                                <a href="https://www.jecjabalpur.ac.in/" target="_blank"> - Jabalpur Engineering College</a>, Jabalpur (M.P.) – 2019 - 75%</b></li>
+                            <li><b>HSE – <a href="https://navodaya.gov.in/nvs/nvs-school/TIKAMGARH/en/home/" target="_blank">Jawahar Navodaya Vidhyalaya</a>, Tikamgarh (M.P.) – 2014 - 84.80%</b></li> 
+                            <li><b>SSE — <a href="https://navodaya.gov.in/nvs/nvs-school/TIKAMGARH/en/home/" target="_blank">Jawahar Navodaya Vidhyalaya</a>, Tikamgarh (M.P.) - 2012 - 9.6 CGPA</b></li>
+                        </ol>
+                    </div>
+                     
+                </lightning-card>
+            </div>
+            <div>
+                <!-- <lightning-card title="" variant="">  -->
+                    <lightning-accordion active-section-name="" allow-multiple-sections-open="">
+                        <lightning-accordion-section label="Awards & Achievements" class="slds-m-top_small">
+                            <ol class="slds-list_dotted slds-p-left_small">
+                                <li>Awarded as FY22 Top Talents(Top 10%) in DU at Persistent Systems</li>
+                                <li>Awarded as High Five – Individual Award for contributing in all BAU Activities and
+                                    making significant positive difference in project at Persistent Systems</li>
+                                <li>Runner-up in men-single category in Inter-IT Table Tennis and represent
+                                    Persistent Systems in different open TT tournaments</li>
+                                <li>Received Letter of Recommendation from IIM Indore for working collaboratively
+                                    with IIM Indore and organizing their festive challenge at our college-JEC with 150+
+                                    students participation</li>
+                            </ol>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section label="Hobies" class="slds-m-top_small">
+                            <ol class="slds-list_dotted slds-p-left_small">
+                                <li>I am an active Table Tennis Player and represent our college and organization in different tournament</li>
+                                <li>I ama self-taught Guitarist and love to play guitar</li>
+                                <li>I love to cook Indian/Italian veg meals and always try to do experiments with dishes</li>
+                                <li>I love numbers and, I often try to solve puzzles and sudoku</li>
+                            </ol>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                    
+                <!-- </lightning-card> -->
+            </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-5 slds-large-size_1-of-5  sidebarColor " >
+            <c-my-resume-side-bar></c-my-resume-side-bar>
+        </div>
+
+    </div>
+    <c-my-resume-project></c-my-resume-project>
+</template>
