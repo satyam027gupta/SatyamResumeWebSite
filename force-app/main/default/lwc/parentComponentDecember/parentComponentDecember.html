@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Parent Component">
+        <label style="color: black;"><b>Name</b></label>
+        <lightning-input type="text" label="Name" placeholder="Enter Your Name" value={nameValue} onchange={handleNameChange} variant="label-hidden"></lightning-input>
+        <br>
+        <br>
+        {nameValue}
+    </lightning-card>
+</template>

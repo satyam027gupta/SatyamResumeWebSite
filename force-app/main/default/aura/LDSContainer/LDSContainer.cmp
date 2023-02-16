@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    <aura:attribute name="currentView" type="string" default="baseView">
+    
+    </aura:attribute>
+	
+	<aura:if isTrue="{!v.currentView == 'baseView'}">
+    	<c:LDSBaseView recordId="{!v.recordId}"   ></c:LDSBaseView>
+    </aura:if>
+
+
+</aura:component>

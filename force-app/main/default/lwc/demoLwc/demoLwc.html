@@ -1,0 +1,16 @@
+<template>
+   <lightning-card title="My Home Page">
+    <div>
+       <lightning-button label="Hit API" onclick={handleClick} variant="brand"></lightning-button>
+    </div>
+    <template if:true={data}>
+      <lightning-card title="Accounts">
+         <template for:each={data} for:item="acc">
+            <p key={acc.Id}>
+               {acc.Name}
+            </p>
+         </template>
+      </lightning-card>
+    </template>
+   </lightning-card>
+</template>
