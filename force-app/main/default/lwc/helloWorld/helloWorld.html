@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+      <lightning-button label="Click HERE" onclick={handleSomeClick}></lightning-button>
+
+      <template if:true={booleancheck}>
+        <div>
+          <p>Inside template</p>
+        </div>
+      </template>
+    </lightning-card>
+    
+  </template>

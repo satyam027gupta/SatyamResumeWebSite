@@ -1,0 +1,24 @@
+<template>
+    <lightning-card>
+        <lightning-layout>
+            <lightning-layout-item>
+                
+                <!-- <div class="slds-box  ">
+                    <lightning-button label="Click HERE" onclick={handlClick}>
+
+                    </lightning-button> -->
+                <!-- </div> -->
+            </lightning-layout-item>
+            <lightning-layout-item>
+                <div>
+                    <lightning-formatted-text value={xx}></lightning-formatted-text>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+    <!-- <c-child-component alert-val={imgSource}></c-child-component> -->
+    <c-child-component onmsgvalueforparent={handleMsgVal} ></c-child-component>
+    <!-- <div>
+        <lightning-formatted-text value={xx}></lightning-formatted-text>
+    </div> -->
+</template>
